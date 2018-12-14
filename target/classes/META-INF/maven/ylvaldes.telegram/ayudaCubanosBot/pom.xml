@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ylvaldes.telegram</groupId>
+	<artifactId>ayudaCubanosBot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>@AyudaCubanosBot</name>
+	<description>Bot destinado a ayudar a todos los cubanos que quieren emigrar a Uruguay o estan iniciando trámites en Uruguay.</description>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<developers>
+		<developer>
+			<id>ayudaCubanosBot</id>
+			<name>Yasmani Ledesma Valdes</name>
+			<email>yasman05@gmail.com</email>
+		</developer>
+	</developers>
+	<dependencies>
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.17</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.12</version>
+		<scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.telegram/telegrambots -->
+	<dependency>
+		<groupId>org.telegram</groupId>
+		<artifactId>telegrambots</artifactId>
+		<version>4.1</version>
+	</dependency>
+</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
