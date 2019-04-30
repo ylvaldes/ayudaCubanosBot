@@ -12,8 +12,9 @@ addons:
         secure: "3711cbc94eef58d3fd434a19a660f5353c599b93"
 
 script: 
-  - mvn -q verify
-  - sonar-scanner
+  - mvn clean verify sonar:sonar
+  - mvn clean install
+  - mvn sonar:sonar
 
 
 after_success:
