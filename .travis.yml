@@ -4,7 +4,17 @@ cache:
   directories:
   - "$HOME/.m2"
 
-script: mvn -q verify
+#Configurando SonnarCloud
+addons:
+  sonarcloud:
+    organization: "ylvaldes-github"
+    token:
+        secure: "3711cbc94eef58d3fd434a19a660f5353c599b93"
+
+script: 
+  - mvn -q verify
+  - sonar-scanner
+
 
 after_success:
   - mvn clean cobertura:cobertura coveralls:report
